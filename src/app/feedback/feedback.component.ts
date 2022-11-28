@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class FeedbackComponent {
 
+  fb=""
+  feedback=()=>
+  {
+    let f:any={"fb":this.fb}
+    console.log(f)
+  }
 }
