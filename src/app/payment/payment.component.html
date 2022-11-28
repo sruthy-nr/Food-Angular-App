@@ -16,27 +16,27 @@
             <table class="table table-borderless">
                 <tr>
                     <td>Cardholder Name</td>
-                    <td><input type="text" name="" id="" class="form-control"></td>
+                    <td><input type="text" name="cname" [(ngModel)]="cname" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Card Number</td>
-                    <td><input type="text" name="" id="" class="form-control"></td>
+                    <td><input type="text" name="cnum" [(ngModel)]="cnum" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Validity</td>
-                    <td><input type="text" name="" id="" class="form-control" placeholder="mm-yy"></td>
+                    <td><input type="text" name="val" [(ngModel)]="val" class="form-control" placeholder="mm-yy"></td>
                 </tr>
                 <tr>
                     <td>CVV</td>
-                    <td><input type="email" name="" id="" class="form-control"></td>
+                    <td><input type="email" name="cvv" [(ngModel)]="cvv" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>Delivery Address</td>
-                    <td><input type="text" name="" id="" class="form-control"></td>
+                    <td><input type="text" name="da" [(ngModel)]="da" class="form-control"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><a href="" class="btn btn-primary">Pay Now</a></td>
+                    <td><button (click)="pay()" class="btn btn-primary">Pay Now</button></td>
                 </tr>
             </table>
 
