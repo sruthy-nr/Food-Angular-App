@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
-
+  name=""
+  ad=""
+  ph=""
+  email=""
+  pswd=""
+  cpswd=""
+  register=()=>
+  {
+    let data:any={"name":this.name,"ad":this.ad,"ph":this.ph,"email":this.email,"pswd":this.pswd,"cpswd":this.cpswd}
+    console.log(data)
+  }
 }
